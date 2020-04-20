@@ -1,6 +1,22 @@
 
 /* stylelint-disable */
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+       url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+       url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -30,10 +46,11 @@ html {
 
 body {
   min-width: 320px;
-  font-family: "formular", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  color: #000;
+  color: #353535;
   background-color: #fff;
 }
 
@@ -117,7 +134,7 @@ i {
 
 mark {
   color: #000;
-  background: yellow;
+  background: transparent;
 }
 
 progress {

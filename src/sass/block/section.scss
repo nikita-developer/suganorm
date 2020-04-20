@@ -1,0 +1,18 @@
+.section {
+    &_face {
+        padding-top: 30px;
+        padding-bottom: 180px;
+        overflow-x: hidden;
+        background: rgb(183, 209, 233);
+        background: linear-gradient(45deg, rgba(183, 209, 233, 1) 0%, rgba(221, 234, 247, 1) 50%, rgba(180, 206, 232, 1) 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        &_face {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
