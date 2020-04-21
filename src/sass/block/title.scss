@@ -16,3 +16,14 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .title {
+        & mark {
+            &::before {
+                bottom: 12px;
+                height: 10px;
+            }
+        }
+    }
+}

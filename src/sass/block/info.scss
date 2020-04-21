@@ -1,0 +1,239 @@
+
+.info__title {
+    margin-bottom: 45px;
+    font-family: "Mont", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 51px;
+    color: #fff;
+
+    &.title {
+        & mark {
+            color: #fff;
+
+            &::before {
+                bottom: 16px;
+                background-color: rgba(255, 255, 255, 0.32);
+            }
+        }
+    }
+
+    & span {
+        display: block;
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+
+.info__sub-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #dbf6dd;
+    text-transform: uppercase;
+}
+
+.info__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -27px;
+    margin-bottom: 30px;
+    margin-left: -27px;
+}
+
+.info__item {
+    position: relative;
+    width: 161px;
+    margin-right: 27px;
+    margin-bottom: 140px;
+    margin-left: 27px;
+
+    &::before {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        width: 189px;
+        height: 103px;
+        content: '';
+        background-image: url("../media/info/arrow.png");
+        background-repeat: no-repeat;
+        transform: translateX(-50%);
+    }
+}
+
+.info__item-description {
+    position: absolute;
+    top: calc(100% + 45px);
+    left: 50%;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+
+    & span {
+        display: block;
+    }
+}
+
+.info__alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__alert-icon {
+    margin-right: 30px;
+}
+
+.info__alert-description {
+    position: relative;
+    max-width: 690px;
+    padding: 7px;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: #fff;
+    border-radius: 70px;
+
+    & span {
+        display: block;
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #ff324a;
+        text-transform: uppercase;
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: -13px;
+        width: 14px;
+        height: 15px;
+        margin-top: -7px;
+        content: '';
+        background-image: url("../media/info/arrow-left.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.info__alert-bd {
+    padding: 7px 60px;
+    border: 1px dotted #5b5b5b;
+    border-radius: 70px;
+}
+
+@media (max-width: 1054px) {
+    .info__box {
+        margin-right: -60px;
+        margin-left: -60px;
+    }
+
+    .info__item {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info__title {
+        font-size: 42px;
+        line-height: 1;
+
+        & span {
+            font-size: 28px;
+        }
+
+        &.title {
+            & mark {
+                &::before {
+                    bottom: 12px;
+                }
+            }
+        }
+    }
+
+    .info__sub-title {
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .info__alert-description {
+        max-width: 350px;
+        font-size: 16px;
+
+        & span {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .info__title {
+        margin-bottom: 20px;
+        font-size: 34px;
+        text-align: center;
+
+        & span {
+            font-size: 22px;
+        }
+    }
+
+    .info__sub-title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .info__box {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .info__item {
+        width: calc(50% - 15px);
+        margin-right: 0;
+        margin-bottom: 110px;
+        margin-left: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .info__item-description {
+        top: calc(100% + 15px);
+        font-size: 14px;
+    }
+
+    .info__item-media {
+        & img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .info__alert-icon {
+        display: none;
+    }
+
+    .info__alert-description {
+        max-width: none;
+        border-radius: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .info__alert-bd {
+        padding-right: 7px;
+        padding-left: 7px;
+        border-radius: 0;
+    }
+}

@@ -6,6 +6,16 @@
         background: rgb(183, 209, 233);
         background: linear-gradient(45deg, rgba(183, 209, 233, 1) 0%, rgba(221, 234, 247, 1) 50%, rgba(180, 206, 232, 1) 100%);
     }
+
+    &_info {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        overflow-x: hidden;
+        background-image: url("../media/section/info.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 768px) {
