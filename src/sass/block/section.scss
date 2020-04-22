@@ -59,6 +59,12 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_commits {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #fff;
+    }
 }
 
 @media (max-width: 768px) {

@@ -38,4 +38,19 @@ $(document).ready(function() {
             timerId = setTimeout(tick, 1000);
         }, 1000)
     }
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        items: 1,
+        responsive : {
+            0 : {
+                nav: false,
+            },
+            480 : {
+
+                nav: true,
+            }
+        }
+    })
 });
