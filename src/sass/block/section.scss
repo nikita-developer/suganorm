@@ -50,6 +50,15 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_professional {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url("../media/section/professional.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,123 @@
+
+.professional__title {
+    margin-bottom: 45px;
+    font-family: "Mont", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+
+    & mark {
+        color: #646ba3;
+    }
+}
+
+.professional__info {
+    position: relative;
+    padding: 35px;
+    background-color: #d1f3f3;
+    background-image: linear-gradient(45deg, rgba(197, 231, 231, 1) 0%, rgba(181, 215, 215, 1) 100%);
+    border-radius: 30px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.11);
+}
+
+.professional__media {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.professional__content {
+    font-size: 18px;
+
+    & span {
+        display: block;
+    }
+
+    & p + p {
+        margin-top: 25px;
+    }
+}
+
+.professional__footer {
+    display: flex;
+    margin-top: 50px;
+}
+
+.professional__name {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+    }
+}
+
+.professional__id {
+    margin-top: -40px;
+}
+
+@media (max-width: 1054px) {
+    .professional__media {
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .professional__info {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .professional__media {
+        display: none;
+    }
+
+    .professional__content {
+        font-size: 16px;
+
+        & span {
+            display: inline;
+        }
+    }
+
+    .professional__name {
+        max-width: 250px;
+        font-size: 14px;
+
+        & span {
+            display: inline;
+        }
+    }
+
+    .professional__id {
+        max-width: 150px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .professional__content {
+        text-align: center;
+    }
+
+    .professional__title {
+        line-height: 1;
+    }
+
+    .professional__footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .professional__id {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
