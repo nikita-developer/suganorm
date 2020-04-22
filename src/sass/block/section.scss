@@ -16,6 +16,25 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_danger {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #fff;
+        background-image: url("../media/section/danger.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_defender {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #fff;
+        background-image: url("../media/section/defender.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 768px) {

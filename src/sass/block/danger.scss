@@ -1,0 +1,235 @@
+
+.danger__title {
+    margin-bottom: 85px;
+    font-size: 30px;
+    text-align: center;
+
+    & mark {
+        font-size: 33px;
+        font-weight: 700;
+        color: #636ba3;
+        text-transform: uppercase;
+
+        & span {
+            color: #6591bc;
+        }
+    }
+
+    &-line {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+
+        &::before {
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 16px;
+            content: '';
+            background-color: #dbf6dd;
+        }
+    }
+}
+
+.danger__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.danger__causes {
+    width: 445px;
+    padding: 40px 23px 75px;
+    background-color: #e3f8e5;
+    border: 1px solid #8fae91;
+}
+
+.danger__causes-title {
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.danger__causes-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.danger__causes-item {
+    position: relative;
+    width: calc(33.3333% - 15px);
+    margin-bottom: 135px;
+
+    &:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    & > span {
+        position: absolute;
+        top: calc(100% + 25px);
+        left: 50%;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        transform: translateX(-50%);
+    }
+}
+
+.danger__causes-footer {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff324a;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::before {
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #353535;
+        content: '+';
+        transform: translateX(-50%);
+    }
+}
+
+.danger__list {
+    width: 480px;
+}
+
+.danger__list-title {
+    margin-bottom: 35px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff324a;
+    text-transform: uppercase;
+}
+
+.danger__list-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+
+.danger__list-icon {
+    min-width: 65px;
+    margin-right: 28px;
+}
+
+@media (max-width: 1054px) {
+    .danger__title-line {
+        &::before {
+            display: none;
+        }
+    }
+
+    .danger__title {
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 1.2;
+
+        & mark {
+            font-size: 24px;
+        }
+    }
+
+    .danger__causes {
+        width: 360px;
+    }
+
+    .danger__causes-item {
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    .danger__causes-footer {
+        font-size: 18px;
+    }
+
+    .danger__list {
+        width: 350px;
+    }
+
+    .danger__list-title {
+        font-size: 38px;
+    }
+
+    .danger__list-item {
+        font-size: 21px;
+    }
+
+    .danger__list-icon {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .danger__title {
+        font-size: 19px;
+
+        & mark {
+            font-size: 20px;
+        }
+    }
+
+    .danger__body {
+        flex-direction: column;
+    }
+
+    .danger__causes {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .danger__list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .danger__causes-title {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    .danger__causes-item {
+        & span {
+            font-size: 14px;
+        }
+    }
+
+    .danger__causes-footer {
+        font-size: 16px;
+    }
+
+    .danger__causes {
+        padding-bottom: 40px;
+    }
+
+    .danger__list-title {
+        font-size: 28px;
+    }
+
+    .danger__list-icon {
+        width: 45px;
+        min-width: 45px;
+    }
+
+    .danger__list-item {
+        font-size: 18px;
+    }
+}
