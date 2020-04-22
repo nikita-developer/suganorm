@@ -41,6 +41,15 @@
         padding-bottom: 60px;
         background-color: #dbf6dd;
     }
+
+    &_information {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url("../media/section/information.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 768px) {
