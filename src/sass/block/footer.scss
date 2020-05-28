@@ -1,0 +1,11 @@
+
+.footer__leadbit {
+    line-height: 1.4;
+    text-align: center;
+
+    & a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
